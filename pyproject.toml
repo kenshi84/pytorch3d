@@ -1,3 +1,18 @@
+[project]
+name = "pytorch3d"
+version = "0.7.8"
+description = "PyTorch3D is FAIR's library of reusable components for deep Learning with 3D data."
+authors = [
+    {name = "FAIR"}
+]
+license = {text = "BSD License"}
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch (==2.7.0)",
+    "numpy (>=2.2.5,<3.0.0)"
+]
+
 [build-system]
-requires = ["setuptools", "wheel", "torch"]
-build-backend = "setuptools.build_meta:__legacy__"
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
